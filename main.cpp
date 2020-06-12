@@ -1,9 +1,11 @@
-#include <iostream>
 #include "mtensor.h"
+#include <iostream>
+#include <vector>
 
 int main() {
-    mTensor a;
-    a.shout();
+    std::vector<int> cc = {1, 2, 3, 4, 5, 6};
+    ME::mTensor a(cc);
+    a.display();
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }
