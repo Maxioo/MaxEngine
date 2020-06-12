@@ -5,6 +5,6 @@
 #include "mtensor.h"
 
 TEST(Tensor_TEST, test1){
-    mTensor a;
-    a.shout();
+    ME::mTensor a;
+    EXPECT_EQ(a.get_ndim(), 0);
 }

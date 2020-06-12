@@ -5,11 +5,20 @@
 #ifndef MAXENGINE_MTENSOR_H
 #define MAXENGINE_MTENSOR_H
 
-class mTensor{
+#include <vector>
+namespace ME {
+    class mTensor {
+    public:
+        mTensor();
+        mTensor(std::vector<int>);
 
-public:
-    int dims;
-    void shout();
-};
+        int get_ndim();
+
+    private:
+        int ndim;
+        std::vector<int> shape;
+        double *data;
+    };
+}
 
 #endif //MAXENGINE_MTENSOR_H

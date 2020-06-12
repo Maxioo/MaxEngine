@@ -4,6 +4,9 @@
 #include "../include/mtensor.h"
 #include <iostream>
 
-void mTensor::shout() {
-    std::cout << "This is Tensor" << std::endl;
+ME::mTensor::mTensor(): ndim(0), data(nullptr), shape(){
+}
+
+int ME::mTensor::get_ndim() {
+    return ndim;
 }
